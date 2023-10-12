@@ -6,6 +6,7 @@ import Navbar from './components/navbar/Navbar'
 import { Nunito } from 'next/font/google'
 import LoginModal from './components/modals/LoginModal'
 import RegisterModal from './components/modals/RegisterModal'
+import SearchModal from './components/modals/SearchModal'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -29,6 +30,7 @@ export default function RootLayout({
       <ClientOnly>
       <LoginModal />
           <RegisterModal />
+          <SearchModal />
         <Navbar  />
       </ClientOnly>
       <div className="pb-20 pt-28">
