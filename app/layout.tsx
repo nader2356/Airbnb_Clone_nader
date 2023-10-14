@@ -7,6 +7,7 @@ import { Nunito } from 'next/font/google'
 import LoginModal from './components/modals/LoginModal'
 import RegisterModal from './components/modals/RegisterModal'
 import SearchModal from './components/modals/SearchModal'
+import RentModal from './components/modals/RentModal'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -31,6 +32,7 @@ export default function RootLayout({
       <LoginModal />
           <RegisterModal />
           <SearchModal />
+          <RentModal />
         <Navbar  />
       </ClientOnly>
       <div className="pb-20 pt-28">
